@@ -52,117 +52,133 @@ end
 
 -- defaults :help highlight-groups
 
-hi("Normal", { fg = fg0, bg = bg0 })
-
+hi("ColorColumn", { bg = cursorline })
+hi("Conceal", { fg = comment })
+-- CurSearch
+hi("Cursor", { fg = bg0, bg = fg0 })
+hi("lCursor", { fg = bg0, bg = constant })
+-- CursorIM
+hi("CursorColumn", { bg = cursorline })
+hi("CursorLine", { bg = cursorline })
+hi("Directory", { fg = identifier, bold = true })
+hi("DiffAdd", {  bg = diffadd })
+hi("DiffChange", {})
+hi("DiffDelete", { fg = diffdelete })
+hi("DiffText", {  bg = difftext })
 hi("EndOfBuffer", { fg = bg1 })
-hi("Statusline", { fg = fg0, bg = bg1, bold = true })
-hi("StatuslineNC", { fg = comment, bg = bg1 })
-hi("WinSeparator", { fg = bg1, bg = bg1 })
-
-hi("Pmenu", { bg = bg1 })
+-- TermCursor
+-- TermCursorNC
+hi("ErrorMsg", { fg = bg0, bg = error })
+hi("WinSeparator", { fg = fg0 })
+hi("Folded", { fg = comment, bg = folded })
+hi("FoldColumn", { fg = comment })
+hi("SignColumn", {})
+hi("IncSearch", { fg = bg0, bg = string })
+-- Substitute
+hi("LineNr", { fg = bg1 })
+-- LineNrAbove
+-- LineNrBelow
+hi("CursorLineNr", { bg = cursorline })
+-- CursorLineSign
+-- CursorLineFold
+hi("MatchParen", { fg = bg0, bg = special })
+hi("ModeMsg", { fg = fg0, bold = true })
+-- MsgArea
+-- MsgSeparator
+hi("MoreMsg", { fg = string, bold = true })
+hi("NonText", { fg = bg1 })
+hi("Normal", { fg = fg0, bg = bg0 })
+-- NormalFloat
+-- NormalNC
+hi("Pmenu", { bg = folded })
 hi("PmenuSel", { fg = bg0, bg = preproc })
 hi("PmenuSbar", { bg = bg1 })
 hi("PmenuThumb", { bg = comment })
-
-hi("TabLine", { fg = comment, bg = bg1 })
-hi("TabLineFill", { bg = bg1 })
-hi("TabLineSel", { bg = bg0 })
-
-hi("ToolbarLine", { fg = bg0, bg = folded })
-hi("ToolbarButton", { bg = bg1, bold = true })
-
-hi("NonText", { fg = bg1 })
-hi("SpecialKey", { fg = bg1 })
-
-hi("Folded", { fg = comment, bg = folded })
-hi("Visual", { bg = visual })
-hi("VisualNOS", { bg = comment })
-hi("LineNr", { fg = bg1 })
-hi("FoldColumn", { fg = comment })
-hi("CursorLine", { bg = cursorline })
-hi("CursorColumn", { bg = cursorline })
-hi("CursorLineNr", { bg = cursorline })
-hi("QuickFixLine", { bg = folded })
-hi("SignColumn", {})
-
-hi("Underlined", { fg = identifier, underline = true })
-
-hi("Error", { fg = bg0, bg = error })
-hi("ErrorMsg", { fg = bg0, bg = error })
-hi("ModeMsg", { fg = fg0, bold = true })
-hi("WarningMsg", { fg = preproc, bold = true })
-hi("MoreMsg", { fg = string, bold = true })
 hi("Question", { fg = string, bold = true })
-
-hi("Todo", { fg = statement })
-hi("MatchParen", { fg = bg0, bg = special })
+hi("QuickFixLine", { bg = folded })
 hi("Search", { fg = bg0, bg = preproc })
-hi("IncSearch", { fg = bg0, bg = string })
-hi("WildMenu", { fg = bg0, bg = preproc })
-hi("ColorColumn", { bg = cursorline })
-hi("Cursor", { fg = bg0, bg = fg0 })
-hi("lCursor", { fg = bg0, bg = constant })
-
-hi("DiffAdd", {  bg = diffadd })
-hi("DiffChange", {})
-hi("DiffText", {  bg = difftext })
-hi("DiffDelete", { fg = diffdelete })
-
+hi("SpecialKey", { fg = bg1 })
 hi("SpellBad", { fg = error, sp = error, underline = true, })
 hi("SpellCap", { fg = identifier, sp = identifier, underline = true, })
 hi("SpellLocal", { fg = special, sp = special, underline = true, })
 hi("SpellRare", { fg = type, sp = type, underline = true, })
+hi("Statusline", { fg = fg0, bg = bg1, bold = true })
+hi("StatuslineNC", { fg = comment, bg = bg1 })
+hi("TabLine", { fg = comment, bg = bg1 })
+hi("TabLineFill", { bg = bg1 })
+hi("TabLineSel", { bg = bg0 })
+hi("Title", { fg = fg0, bold = true})
+hi("Visual", { bg = visual })
+hi("VisualNOS", { bg = comment })
+hi("WarningMsg", { fg = preproc, bold = true })
+-- Whitespace
+hi("WildMenu", { fg = bg0, bg = preproc })
+-- WinBar
+-- WinBarNC
 
 -- syntax :help group-name
 
-hi("Identifier", { fg = error })
-hi("Function", { fg = identifier })
-hi("Statement", { fg = statement })
-hi("Label", { fg = statement })
+hi("Comment", { fg = comment, italic = true })
+
 hi("Constant", { fg = string })
 hi("String", { fg = string })
 hi("Number", { fg = constant })
 hi("Boolean", { fg = constant })
+-- Float
+
+hi("Identifier", { fg = error })
+hi("Function", { fg = identifier })
+
+hi("Statement", { fg = statement })
+-- Conditional
+-- Repeat
+hi("Label", { fg = statement })
+-- Operator
+-- Keyword
+-- Exception
+
 hi("PreProc", { fg = preproc })
-hi("Special", { fg = special })
-hi("Tag", { fg = preproc })
-hi("Delimiter", { fg = delimiter })
+-- Include
+-- Define
+-- Macro
+-- PreCondit
+
 hi("Type", { fg = type })
 hi("StorageClass", { fg = statement })
-hi("Directory", { fg = identifier, bold = true })
-hi("Comment", { fg = comment, italic = true })
-hi("Conceal", { fg = comment })
+-- Structure
+-- Typedef
+
+hi("Special", { fg = special })
+-- SpecialChar
+hi("Tag", { fg = preproc })
+hi("Delimiter", { fg = delimiter })
+-- SpecialComment
+-- Debug
+
+hi("Underlined", { fg = identifier, underline = true })
+
 hi("Ignore", {})
 
-hi("Title", { fg = fg0, bold = true})
+hi("Error", { fg = bg0, bg = error })
+
+hi("Todo", { fg = statement })
+
+--[[
+tree-sitter
+https://github.com/nvim-treesitter/nvim-treesitter/blob/master/CONTRIBUTING.md
+--]]
+
+hi("@variable", { fg = fg0 })
+hi("@parameter", { fg = fg0 })
+hi("@field", { fg = fg0 })
+hi("@constant.builtin", { link = "Constant"})
 
 -- plugins
 
-hi("qfError", { fg = error })
-hi("colortemplateKey", { link = "Statement" })
-hi("colortemplateAttr", { link = "String" })
-hi("vimNotation", { link = "Type" })
-hi("vimFuncSID", { link = "PreProc" })
-hi("vimHiTerm", { link = "Identifier" })
-hi("helpNotVi", { link = "Comment" })
-hi("helpExample", { link = "PreProc" })
 hi("gitCommitSummary", { link = "Title" })
-hi("cocErrorSign", { link = "Type" })
 hi("GitGutterAdd", { link = "String" })
 hi("GitGutterChange", { link = "Number" })
 hi("GitGutterDelete", { link = "Identifier" })
 hi("diffAdded", { link = "String" })
 hi("diffRemoved", { fg = error })
-hi("asciidoctorOption", { fg = comment })
-hi("asciidoctorLiteralBlock", { fg = comment })
-hi("asciidoctorIndented", { fg = comment })
-hi("SelectDirectoryPrefix", { fg = comment })
--- https://github.com/vim/vim/blob/master/runtime/syntax/python.vim
-hi("pythonBuiltin", { link = "Constant" })
--- https://github.com/vim-python/python-syntax/blob/master/syntax/python.vim
-hi("pythonBuiltinFunc", { link = "Special" })
--- overwrites pythonInclude because of pyrex.vim
--- https://github.com/lambdalisue/vim-cython-syntax needs pythonInclude so link
-hi("pythonInclude", { link = "pythonImport" })
-hi("ExtraWhitespace", { link = "Error" })
 
