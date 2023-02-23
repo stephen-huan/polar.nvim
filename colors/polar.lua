@@ -1,5 +1,6 @@
 vim.o.background = "light"
 vim.cmd.highlight("clear")
+vim.g.colors_name = "polar"
 
 -- colors
 
