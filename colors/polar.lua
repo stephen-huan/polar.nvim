@@ -4,27 +4,27 @@ vim.g.colors_name = "polar"
 
 -- colors
 
-local comment    = "#808080" -- 244
-local constant   = "#986801" --  94
-local string     = "#2a871f" --  28
-local identifier = "#2f6aea" --  27
-local statement  = "#a626a4" -- 127
-local preproc    = "#ca1243" -- 161
-local type       = "#c18401" -- 172
-local special    = "#0184bc" --  67
-local delimiter  = "#d75f00" -- 166
+local comment     = "#808080" -- 244
+local constant    = "#986801" --  94
+local string      = "#2a871f" --  28
+local identifier  = "#2f6aea" --  27
+local statement   = "#a626a4" -- 127
+local preproc     = "#ca1243" -- 161
+local type        = "#c18401" -- 172
+local special     = "#0184bc" --  67
+local delimiter   = "#d75f00" -- 166
 
-local fg0        = "#000000" --  16
-local bg0        = "#ffffff" -- 231
-local bg1        = "#cacbcc" -- 251
-local folded     = "#e0e4e4" -- 254
-local cursorline = "#f4f4f4" -- 254
-local visual     = "#d0d9ea" -- 153
-local error      = "#d70000" -- 160
+local fg0         = "#000000" --  16
+local bg0         = "#ffffff" -- 231
+local bg1         = "#cacbcc" -- 251
+local folded      = "#e0e4e4" -- 254
+local cursorline  = "#f4f4f4" -- 254
+local visual      = "#d0d9ea" -- 153
+local error       = "#d70000" -- 160
 
-local diffadd    = "#c9f9c9" -- 194
-local difftext   = "#f9f9c9" -- 222
-local diffdelete = "#f9c9c9" -- 224
+local diffadd     = "#c9f9c9" -- 194
+local difftext    = "#f9f9c9" -- 222
+local diffdelete  = "#f9c9c9" -- 224
 
 -- terminal colors
 
@@ -66,10 +66,10 @@ hi("lCursor", { fg = bg0, bg = constant })
 hi("CursorColumn", { bg = cursorline })
 hi("CursorLine", { bg = cursorline })
 hi("Directory", { fg = identifier, bold = true })
-hi("DiffAdd", {  bg = diffadd })
+hi("DiffAdd", { bg = diffadd })
 hi("DiffChange", {})
 hi("DiffDelete", { fg = diffdelete })
-hi("DiffText", {  bg = difftext })
+hi("DiffText", { bg = difftext })
 hi("EndOfBuffer", { fg = bg1 })
 -- TermCursor
 -- TermCursorNC
@@ -112,7 +112,7 @@ hi("StatuslineNC", { fg = comment, bg = bg1 })
 hi("TabLine", { fg = comment, bg = bg1 })
 hi("TabLineFill", { bg = bg1 })
 hi("TabLineSel", { bg = bg0 })
-hi("Title", { fg = fg0, bold = true})
+hi("Title", { fg = fg0, bold = true })
 hi("Visual", { bg = visual })
 hi("VisualNOS", { bg = comment })
 hi("WarningMsg", { fg = preproc, bold = true })
@@ -176,7 +176,7 @@ https://github.com/nvim-treesitter/nvim-treesitter/blob/master/CONTRIBUTING.md
 hi("@variable", { fg = fg0 })
 hi("@parameter", { fg = fg0 })
 hi("@field", { fg = fg0 })
-hi("@constant.builtin", { link = "Constant"})
+hi("@constant.builtin", { link = "Constant" })
 
 hi("@variable", { link = "Identifier" }, shell)
 
