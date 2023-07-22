@@ -47,9 +47,13 @@ local diffdelete = "#f9c9c9" -- 224
 
 -- highlights
 
-local function hi(name, val)
-    vim.api.nvim_set_hl(0, name, val)
+local function hi(name, val, ns)
+    vim.api.nvim_set_hl(ns or 0, name, val)
 end
+
+-- namespaces
+
+local shell = vim.api.nvim_create_namespace("polar.shell")
 
 -- defaults :help highlight-groups
 
@@ -173,6 +177,8 @@ hi("@variable", { fg = fg0 })
 hi("@parameter", { fg = fg0 })
 hi("@field", { fg = fg0 })
 hi("@constant.builtin", { link = "Constant"})
+
+hi("@variable", { link = "Identifier" }, shell)
 
 -- plugins
 
