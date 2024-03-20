@@ -178,6 +178,11 @@ https://github.com/nvim-treesitter/nvim-treesitter/blob/master/CONTRIBUTING.md
 hi("@variable", { fg = fg0 })
 hi("@constant.builtin", { link = "Constant" })
 
+hi("@comment.error", { link = "Todo" })
+hi("@comment.warning", { link = "Todo" })
+hi("@comment.todo", { link = "Todo" })
+hi("@comment.note", { link = "Todo" })
+
 hi("@variable", { link = "Identifier" }, shell)
 
 -- plugins
