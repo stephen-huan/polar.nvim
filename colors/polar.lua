@@ -176,8 +176,6 @@ https://github.com/nvim-treesitter/nvim-treesitter/blob/master/CONTRIBUTING.md
 --]]
 
 hi("@variable", { fg = fg0 })
-hi("@parameter", { fg = fg0 })
-hi("@field", { fg = fg0 })
 hi("@constant.builtin", { link = "Constant" })
 
 hi("@variable", { link = "Identifier" }, shell)
