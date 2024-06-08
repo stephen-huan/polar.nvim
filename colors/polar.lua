@@ -190,18 +190,10 @@ hi("DiagnosticInfo", { fg = "LightBlue" })
 hi("DiagnosticHint", { fg = "LightGrey" })
 hi("DiagnosticOk", { fg = "LightGreen" })
 
---[[
-tree-sitter
-https://github.com/nvim-treesitter/nvim-treesitter/blob/master/CONTRIBUTING.md
---]]
+-- tree-sitter :help treesitter-highlight-groups
 
 hi("@variable", { fg = fg0 })
+
 hi("@constant.builtin", { link = "Constant" })
 
-hi("@comment.error", { link = "Todo" })
-hi("@comment.warning", { link = "Todo" })
-hi("@comment.todo", { link = "Todo" })
-hi("@comment.note", { link = "Todo" })
-
 hi("@variable", { link = "Identifier" }, shell)
-
