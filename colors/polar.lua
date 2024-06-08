@@ -148,7 +148,7 @@ hi("Statement", { fg = statement })
 -- Conditional
 -- Repeat
 hi("Label", { fg = statement })
--- Operator
+hi("Operator", { fg = statement })
 -- Keyword
 -- Exception
 
