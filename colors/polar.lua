@@ -197,11 +197,3 @@ hi("@comment.note", { link = "Todo" })
 
 hi("@variable", { link = "Identifier" }, shell)
 
--- plugins
-
-hi("gitCommitSummary", { link = "Title" })
-hi("GitGutterAdd", { link = "String" })
-hi("GitGutterChange", { link = "Number" })
-hi("GitGutterDelete", { link = "Identifier" })
-hi("diffAdded", { link = "String" })
-hi("diffRemoved", { fg = error })
