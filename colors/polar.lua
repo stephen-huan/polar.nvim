@@ -182,6 +182,14 @@ hi("Added", { fg = string })
 hi("Changed", { fg = constant })
 hi("Removed", { fg = error })
 
+-- diagnostics :help diagnostic-highlights
+
+hi("DiagnosticError", { fg = "Red" })
+hi("DiagnosticWarn", { fg = "Orange" })
+hi("DiagnosticInfo", { fg = "LightBlue" })
+hi("DiagnosticHint", { fg = "LightGrey" })
+hi("DiagnosticOk", { fg = "LightGreen" })
+
 --[[
 tree-sitter
 https://github.com/nvim-treesitter/nvim-treesitter/blob/master/CONTRIBUTING.md
