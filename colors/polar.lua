@@ -53,10 +53,6 @@ local function hi(name, val, ns)
     vim.api.nvim_set_hl(ns or 0, name, val)
 end
 
--- namespaces
-
-local shell = vim.api.nvim_create_namespace "polar.shell"
-
 -- defaults :help highlight-groups
 
 hi("ColorColumn", { bg = cursorline })
@@ -196,4 +192,5 @@ hi("@variable", { fg = fg0 })
 
 hi("@constant.builtin", { link = "Constant" })
 
-hi("@variable", { link = "Identifier" }, shell)
+hi("@variable.bash", { link = "Identifier" })
+hi("@variable.fish", { link = "Identifier" })
