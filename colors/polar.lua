@@ -86,8 +86,8 @@ hi("LineNr", { fg = bg1 })
 -- LineNrAbove
 -- LineNrBelow
 hi("CursorLineNr", { bg = cursorline })
--- CursorLineSign
 -- CursorLineFold
+-- CursorLineSign
 hi("MatchParen", { fg = bg0, bg = special })
 hi("ModeMsg", { fg = fg0, bold = true })
 -- MsgArea
@@ -96,21 +96,29 @@ hi("MoreMsg", { fg = string, bold = true })
 hi("NonText", { fg = bg1 })
 hi("Normal", { fg = fg0, bg = bg0 })
 -- NormalFloat
+-- FloatBorder
+-- FloatTitle
+-- FloatFooter
 -- NormalNC
 hi("Pmenu", { bg = folded })
 hi("PmenuSel", { fg = bg0, bg = preproc })
+-- PmenuKind
+-- PmenuKindSel
+-- PmenuExtra
+-- PmenuExtraSel
 hi("PmenuSbar", { bg = bg1 })
 hi("PmenuThumb", { bg = comment })
 hi("Question", { fg = string, bold = true })
 hi("QuickFixLine", { bg = folded })
 hi("Search", { fg = bg0, bg = preproc })
+-- SnippetTabstop
 hi("SpecialKey", { fg = bg1 })
 hi("SpellBad", { fg = error, sp = error, underline = true })
 hi("SpellCap", { fg = identifier, sp = identifier, underline = true })
 hi("SpellLocal", { fg = special, sp = special, underline = true })
 hi("SpellRare", { fg = type, sp = type, underline = true })
-hi("Statusline", { fg = fg0, bg = bg1, bold = true })
-hi("StatuslineNC", { fg = comment, bg = bg1 })
+hi("StatusLine", { fg = fg0, bg = bg1, bold = true })
+hi("StatusLineNC", { fg = comment, bg = bg1 })
 hi("TabLine", { fg = comment, bg = bg1 })
 hi("TabLineFill", { bg = bg1 })
 hi("TabLineSel", { bg = bg0 })
@@ -169,6 +177,10 @@ hi("Ignore", {})
 hi("Error", { fg = bg0, bg = error })
 
 hi("Todo", { fg = statement })
+
+hi("Added", { fg = string })
+hi("Changed", { fg = constant })
+hi("Removed", { fg = error })
 
 --[[
 tree-sitter
