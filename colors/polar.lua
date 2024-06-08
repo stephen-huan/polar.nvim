@@ -190,7 +190,8 @@ hi("DiagnosticOk", { fg = "LightGreen" })
 
 hi("@variable", { fg = fg0 })
 
-hi("@constant.builtin", { link = "Constant" })
+hi("@constant.builtin", { link = "@constant" })
+hi("@type.builtin", { link = "@type" })
 
 hi("@variable.bash", { link = "Identifier" })
 hi("@variable.fish", { link = "Identifier" })
