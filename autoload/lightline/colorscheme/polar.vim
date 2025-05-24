@@ -2,7 +2,7 @@
 " Filename: autoload/lightline/colorscheme/polar.vim
 " Author: Stephen Huan <stephen-huan>
 " License: MIT License
-" Last Change: 2022/05/28 20:24:26.
+" Last Change: 2025/05/24 19:48:00
 " =============================================================================
 
 " Common colors
@@ -19,11 +19,11 @@ let s:gray1  = [ '#808080', 244 ]
 let s:gray2  = [ '#f4f4f4', 254 ]
 let s:gray3  = [ '#cacbcc', 251 ]
 
-let s:box    = [ s:gray1, s:bg ]
+let s:box    = [ s:gray1, s:bg, 'nocombine,NONE' ]
 
 let s:p = {'normal': {}, 'inactive': {}, 'insert': {}, 'replace': {}, 'visual': {}, 'tabline': {}}
 let s:p.normal.left     = [ [ s:bg,     s:green,  'bold' ], s:box ]
-let s:p.normal.middle   = [ [ s:gray1,  s:gray2 ] ]
+let s:p.normal.middle   = [ [ s:gray1,  s:gray2,  'nocombine,NONE' ] ]
 let s:p.normal.right    = [ [ s:bg,     s:gray1,  'bold' ], s:box ]
 let s:p.normal.error    = [ [ s:red2,   s:bg ] ]
 let s:p.normal.warning  = [ [ s:yellow, s:bg ] ]
